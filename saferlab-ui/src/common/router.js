@@ -77,13 +77,16 @@ export const getRouterData = (app) => {
       component: dynamicWrapper(app, [], () => import('../routes/Exception/403')),
     },
     '/exception/404': {
-      component: dynamicWrapper(app, [], () => import('../routes/Exception/CreateProjectView')),
+      component: dynamicWrapper(app, [], () => import('../routes/Exception/404')),
     },
     '/exception/500': {
       component: dynamicWrapper(app, [], () => import('../routes/Exception/500')),
     },
     '/exception/trigger': {
       component: dynamicWrapper(app, ['error'], () => import('../routes/Exception/triggerException')),
+    },
+    '/sra/project/wizard-zh': {
+      component: dynamicWrapper(app, [], () => import('../routes/Exception/CreateProjectView')),
     },
     '/user': {
       component: dynamicWrapper(app, [], () => import('../layouts/UserLayout')),
