@@ -77,7 +77,7 @@ export const getRouterData = (app) => {
       component: dynamicWrapper(app, [], () => import('../routes/Exception/403')),
     },
     '/exception/404': {
-      component: dynamicWrapper(app, [], () => import('../routes/Exception/404')),
+      component: dynamicWrapper(app, [], () => import('../routes/Exception/CreateProjectView')),
     },
     '/exception/500': {
       component: dynamicWrapper(app, [], () => import('../routes/Exception/500')),
